@@ -62,8 +62,8 @@
 		<div class="hero" data-bg-image="/images/banner.png">
 			<div class="container">
 				<form action="#" class="find-location" id="find">
-					<input type="text" placeholder="Find your location..." id="search_city"> <input
-						type="submit" value="Find">
+					<input type="text" placeholder="Find your location..."
+						id="search_city"> <input type="submit" value="Find">
 				</form>
 
 			</div>
@@ -164,6 +164,23 @@
 								<span th:text="${weather.weather[4].tempMax}">23</span><sup>o</sup>C
 							</div>
 							<small><span th:text="${weather.weather[4].tempMin}">18</span><sup>o</sup></small>
+						</div>
+					</div>
+					<div class="forecast">
+						<div class="forecast-header">
+							<div class="day" th:text="${weather.weather[5].day}">Friday</div>
+						</div>
+						<!-- .forecast-header -->
+						<div class="forecast-content">
+							<div class="forecast-icon">
+								<img src="/images/icons/icon-12.svg"
+									th:src="${'/images/icons/' + weather.weather[5].icon + '.svg'}"
+									alt="" width=48>
+							</div>
+							<div class="degree">
+								<span th:text="${weather.weather[5].tempMax}">23</span><sup>o</sup>C
+							</div>
+							<small><span th:text="${weather.weather[5].tempMin}">18</span><sup>o</sup></small>
 						</div>
 					</div>
 				</div>
