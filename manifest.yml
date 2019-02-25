@@ -1,6 +1,6 @@
 ---
 applications:
-- name: weather-demo
+- name: weather-demo-new
   memory: 1024M
   instances: 1
   path: target/weather-frontend-0.0.1-SNAPSHOT.jar

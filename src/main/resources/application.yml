@@ -1,5 +1,5 @@
 weather:
-  city: Newbury
-  company: My Company
+  city: Ratingen
+  company: Vodafone DE
   service:
     uri: https://weather-backend-keep.cfapps.lab01.pcf.pw
